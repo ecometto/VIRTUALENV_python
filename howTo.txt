@@ -1,0 +1,21 @@
+
+# instalar paquete de python virtualenv (ver si existe con pip.list) 
+ pip install virtualenv
+
+# dentro de la carpeta del proyecto, crear el entorno virtual
+ python -m virtualenv my_virtual_env
+
+# activar el entorno virtual
+ my_virtual_env\Script\activate
+(para desactivar directamente "deactivate" en la consola)
+
+#luego instalar los paquetes que sean necesarios a traves de:
+ pip install mi_paquete
+# y para guardar la configuración, se debe "freezar"
+ pip freeze > entorno.txt
+
+# para recuperar esa información en algún entorno nuevo, se debe:
+-generar el nuevo entorno, -acceder, y luego -recuperar la info:
+ pip install -r ruta/entorno.txt
+
+
